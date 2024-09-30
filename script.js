@@ -34,7 +34,6 @@ console.log(eta)
 
 //terza fase: elaborazione dei dati;
 // calcolo dei chilometri da percorere * 0,21€
-conversione = km * 1000;
 prezzo = prezzoAkm * km;
 if(eta < 18){
 //calcolo dello sconto per i minorenni
