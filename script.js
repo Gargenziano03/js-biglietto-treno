@@ -18,5 +18,10 @@ let eta;
 //creo variabile per salvare il prezzo finale 
 let prezzoTotale;
 
+//seconda fase: raccolta dati
+km = prompt('scriva il numero di km che si desidera percorrere.');
+console.log(km);
 
+eta = prompt('definisci età')
+console.log(eta)
 
