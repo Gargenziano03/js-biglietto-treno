@@ -42,7 +42,8 @@ if(eta < 18){
     messagge= 'non ci sono sconti applicabili';
 }
 
-console.log(prezzo)
+//quarta fase
+console.log(prezzo);
 console.log(sconto);
 
 
