@@ -17,6 +17,8 @@ const scontoMinorenni = 0.20;
 const scontoAnzioni = 0.40
 let km;
 let eta;
+let prezzo
+let sconto;
 
 //creo variabile per salvare il prezzo finale;
 let prezzoFinale
@@ -29,5 +31,18 @@ eta = prompt('definisci età')
 console.log(eta)
 
 //terza fase: elaborazione dei dati;
+prezzo = prezzoAkm * km;
+if(eta < 18){
+    messagge= 'applica sconto minorenne';
+    sconto = (prezzo * scontoMinorenni) / 100;
+}else if(eta > 18){
+    messagge= 'applica sconto anziano';
+    sconto = (prezzo * scontoAnzioni) / 100;
+}else{
+    messagge= 'non ci sono sconti applicabili';
+}
+
+console.log(prezzo)
+console.log(sconto);
 
 
