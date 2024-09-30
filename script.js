@@ -31,14 +31,18 @@ eta = prompt('definisci età')
 console.log(eta)
 
 //terza fase: elaborazione dei dati;
+// calcolo dei chilometri da percorere * 0,21€
 prezzo = prezzoAkm * km;
 if(eta < 18){
+//calcolo dello sconto per i minorenni
     messagge= 'applica sconto minorenne';
     sconto = (prezzo * scontoMinorenni) / 100;
 }else if(eta > 18){
+//calcolo dello sconto per gli anziani
     messagge= 'applica sconto anziano';
     sconto = (prezzo * scontoAnzioni) / 100;
 }else{
+//prezzo per chi non viene applicato nessuno sconto
     messagge= 'non ci sono sconti applicabili';
 }
 
