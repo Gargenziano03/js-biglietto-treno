@@ -14,7 +14,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 //creo variabili per chiedere informazioni al cliente;
 const prezzoAkm = 0.21;
 const scontoMinorenni = 0.20;
-const scontoAnzioni = 0.40
+const scontoAnzioni = 0.40;
 let messagge;
 let conversione
 let km;
@@ -38,12 +38,10 @@ conversione = km * 1000;
 prezzo = prezzoAkm * km;
 if(eta < 18){
 //calcolo dello sconto per i minorenni
-    messagge= 'applica sconto minorenne';
     sconto = (prezzo * scontoMinorenni) / 100;
     prezzoFinale = sconto.toFixed(2)
 }else if(eta > 65){
 //calcolo dello sconto per gli anziani
-    messagge= 'applica sconto anziano';
     sconto = (prezzo * scontoAnzioni) / 100;
     prezzoFinale = sconto.toFixed(2)
     
