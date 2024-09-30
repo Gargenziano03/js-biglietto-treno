@@ -10,18 +10,24 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 */
 
 
-// prima fase: preparazione 
-//creo variabili per chiedere informazioni al cliente
+// prima fase: preparazione;
+//creo variabili per chiedere informazioni al cliente;
+const prezzoAkm = 0.21;
+const scontoMinorenni = 0.20;
+const scontoAnzioni = 0.40
 let km;
 let eta;
 
-//creo variabile per salvare il prezzo finale 
-let prezzoTotale;
+//creo variabile per salvare il prezzo finale;
+let prezzoFinale
 
-//seconda fase: raccolta dati
+//seconda fase: raccolta dati;
 km = prompt('scriva il numero di km che si desidera percorrere.');
 console.log(km);
 
 eta = prompt('definisci età')
 console.log(eta)
+
+//terza fase: elaborazione dei dati;
+
 
